@@ -1,29 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Mar 27 14:01:46 2021
+Created on Sat Mar 27 15:20:47 2021
 
 @author: arnavchokshi
 """
 import random
-class Monster:
-    def __init__ ():
-        hp = random.randint(50, 200)
-        damage = random.randint(10, 50)
-        toughness = random.randint(0, 20)
-        pointvalue = hp + 4 * damage + 10 * toughness
+class Player:
+    def __init__():
+        hp = 100
+        damage = 25
+        armor = 0
+        rounds = 0
+        points = 0
     
-    def intro():
-        print("A monster has appeared!")
-        
     def desc(self):
         print("HP: ", self.hp)
         print("Damage: ", self.damage)
-        print("Toughness: ", self.toughness)
-        print("Point value: ", self.pointvalue)
+        print("Armor: ", self.armor)
+        print("Round number: ", self.rounds)
+        print("Point value: ", self.points)
         
+    def turn(self):
+        turnNum = input("Choose an option (enter an int corresponding to your option of choice):\n1. Attack: deal damage to the monster\n2. Guard: take half damage from the monster's next attack\n3. Evade: attempt to dodge the monster's next attack (may fail)")
+   
     def takedamage(self, injury):
         self.hp = self.hp - injury
-    
-        
-
