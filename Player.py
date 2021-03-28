@@ -26,3 +26,19 @@ class Player:
    
     def takedamage(self, injury):
         self.hp = self.hp - injury
+    
+    def upgrade(self):
+        upgradeNum = input("Choose an option (enter an int corresponding to your option of choice):\n1. Heal: restore your HP to 100\n2. Weapon upgrade: increase damage by 5\n3. Armor upgrade: increase armor by 5")
+        if(upgradeNum == 1):
+            self.hp = 100
+            print("HP restored to 100.")
+        elif(upgradeNum == 2):
+            self.damage = self.damage + 5
+            print("Damage increased by 5.")
+        elif(upgradeNum == 3):
+            self.armor = self.armor + 5
+            print("Armor increased by 5.")
+        
+    def pointchange(self, pointgain):
+        self.points = self.points + pointgain
+        print(pointgain, " points added to total")
