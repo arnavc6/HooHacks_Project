@@ -28,5 +28,4 @@ def controlgame():
         #call fighting function
     print("Game over!")
 
-#Start the game
 controlgame()
