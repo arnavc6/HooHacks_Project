@@ -23,7 +23,13 @@ class Player:
         
     def turn(self):
         turnNum = input("Choose an option (enter an int corresponding to your option of choice):\n1. Attack: deal damage to the monster\n2. Guard: take half damage from the monster's next attack\n3. Evade: attempt to dodge the monster's next attack (may fail)")
-   
+        if turnNum == 1:
+            print("Monster took ", damage, " damage.")
+        elif turnNum == 2:
+            print("Guard stance active.")
+        elif turnNum == 3:
+            print("Ready to evade.")
+            
     def takedamage(self, injury):
         self.hp = self.hp - injury
     
