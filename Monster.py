@@ -3,7 +3,7 @@
 """
 Created on Sat Mar 27 14:01:46 2021
 
-@author: arnavchokshi
+@author: arnavchokshi, mtran4
 """
 import random
 class Monster:

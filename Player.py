@@ -3,7 +3,7 @@
 """
 Created on Sat Mar 27 15:20:47 2021
 
-@author: arnavchokshi
+@author: arnavchokshi, mtran4
 """
 import random
 class Player:
