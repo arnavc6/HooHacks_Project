@@ -7,13 +7,13 @@ Created on Sat Mar 27 14:01:46 2021
 """
 import random
 class Monster:
-    def __init__ ():
-        hp = random.randint(50, 200)
-        damage = random.randint(10, 50)
-        toughness = random.randint(0, 20)
-        pointvalue = hp + 4 * damage + 10 * toughness
-    
-    def intro():
+    def __init__ (self, hp, damage, toughness, pointvalue):
+        self.hp = hp
+        self.damage = damage
+        self.toughness = toughness
+        self.pointvalue = pointvalue
+
+    def intro(self):
         print("A monster has appeared!")
         
     def desc(self):
@@ -24,5 +24,3 @@ class Monster:
         
     def takedamage(self, injury):
         self.hp = self.hp - injury
-    
-        

@@ -7,12 +7,12 @@ Created on Sat Mar 27 15:20:47 2021
 """
 import random
 class Player:
-    def __init__():
-        hp = 100
-        damage = 25
-        armor = 0
-        rounds = 0
-        points = 0
+    def __init__(self, hp, damage, armor, rounds, points):
+        self.hp = hp
+        self.damage = damage
+        self.armor = armor
+        self.rounds = rounds
+        self.points = points
     
     def desc(self):
         print("HP: ", self.hp)
